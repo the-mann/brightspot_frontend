@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Api } from 'src/generated/Api';
 
 // ?? is new nullish coalescing operator
-const api = new Api({ baseURL: import.meta.env.API_URL ?? 'http://127.0.0.1:8000'});
+const api = new Api({ baseURL: import.meta.env.API_URL ?? 'http://localhost:9000/api'/*, withCredentials: true*/ });
 
 export default boot(({ app }) => {
   // for use inside Vue files (Options API) through this.$axios and this.$api
@@ -18,5 +18,6 @@ export default boot(({ app }) => {
   // ^ ^ ^ this will allow you to use this.$api (for Vue Options API form)
   //       so you can easily perform requests against your app's API
 })
+
 
 export { axios, api }
