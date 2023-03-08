@@ -1,7 +1,14 @@
 <template>
   <q-page padding>
-    <blog-post :data="data"></blog-post>
-    <comment-section :comments="data.comments" @reply="fetchBlogPost(id)"></comment-section>
+    <blog-post :data="data" class="q-ma-lg"></blog-post>
+
+    <div class="row q-ml-sm q-mt-lg">
+      <div class="col-8">
+        <span class="text-h3">Comments</span>
+        <hr/>
+        <comment-section class="col-8" :comments="data.comments ?? []" @reply="fetchBlogPost(id)" :blogpost="id"></comment-section>
+      </div>
+    </div>
   </q-page>
 </template>
 

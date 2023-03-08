@@ -1,9 +1,9 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-grey-1 text-black">
         <q-toolbar-title>
-          Quasar App
+          <img class="q-mt-sm" src="~assets/brightspot-logo-200px.svg" alt="Brightspot">
         </q-toolbar-title>
         <django-login></django-login>
       </q-toolbar>

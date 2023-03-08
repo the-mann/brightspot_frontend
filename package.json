@@ -2,7 +2,7 @@
   "name": "brightspot-frontend",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "productName": "Brightspot Blog",
   "author": "Marcus Mann <marcus@marcusmann.dev>",
   "private": true,
   "scripts": {
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@quasar/app-vite": "^1.0.0",
+    "@quasar/quasar-app-extension-qmarkdown": "^1.4.4",
     "@types/node": "^12.20.21",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
